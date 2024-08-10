@@ -74,7 +74,7 @@ const loadSong = (songIndex) => {
     changeActivesClass(actualSong, songIndex);
     if (songIndex != actualSong) {
       actualSong = songIndex;
-      audio.src = "/audio/" + songList[songIndex].File;
+      audio.src = "audio/" + songList[songIndex].File;
       playSong();
       changeCover(songIndex);
       changeTitle(songIndex);
@@ -134,7 +134,7 @@ const changeActivesClass = (lastIndex, newIndex) => {
 
 //*Cambiar el cover de la cancion
 const changeCover = (songIndex) => {
-  cover.src = "/img/" + songList[songIndex].cover;
+  cover.src = "img/" + songList[songIndex].cover;
 };
 //*Cambiar el titulo
 const changeTitle = (songIndex) => {

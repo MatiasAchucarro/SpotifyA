@@ -19,13 +19,30 @@ body {
     min-width: 320px;
     background-image: linear-gradient(black , gray);
     border-radius: 1rem;
-    padding: 2rem;
     color: white;
     box-shadow: 2px 2px 3px black;
     height: 80vh;
+    overflow: hidden;
+}
+.content{
+    border-radius: 1rem;
+    padding: 2rem;
     overflow-y: auto;
+    max-height: 100%
+}
+.content::-webkit-scrollbar {
+    width: 10px;
 }
 
+.content::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: transparent;
+ 
+}
+.content::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: goldenrod;
+}
 
 /*Title*/
 .title {
@@ -89,6 +106,6 @@ body {
 
 .songs a.active{
 
-    color: white;
+    color: goldenrod;
     font-weight: bold;
 }
